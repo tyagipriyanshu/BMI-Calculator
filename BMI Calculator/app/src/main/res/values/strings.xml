@@ -1,0 +1,15 @@
+<resources>
+    <string name="Bmi_info">BMI is a measurement of a person\'s leanness or corpulence based on their height and weight.</string>
+    <string name="body_mass_index">Body Mass Index</string>
+    <string name="please_fill_the_details">Please fill the details :</string>
+    <string name="calculate_bmi">CALCULATE BMI</string>
+    <string name="weight_kg">Weight (Kg)</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="app_name">My BMI</string>
+    <string name="eat_a_balanced_diet">Eat A Balanced Diet</string>
+    <string name="focus_on_relaxation_and_sleep">Focus On Relaxation And Sleep</string>
+    <string name="stay_active">Stay Active</string>
+    <string name="tips_for_you">Tips For You :</string>
+    <string name="healthy_weight">Healthy Weight!</string>
+    <string name="your_bmi">Your BMI =</string>
+</resources>

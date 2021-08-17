@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3ABF3F"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/bmiValueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="5dp"
+        android:text="25.5"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/your_bmi"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/bmiValueTV"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bmiFlagImgView"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/bmiValueTV"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/correct" />
+
+    <TextView
+        android:id="@+id/bmiLabelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/healthy_weight"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@color/colorWhite"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/IMG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/IMG"
+        app:layout_constraintTop_toTopOf="@+id/IMG" />
+
+    <ImageView
+        android:id="@+id/IMG"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/bmiLabelTV"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiFlagImgView"
+        app:srcCompat="@drawable/normal" />
+
+    <ImageView
+        android:id="@+id/skipResultBTN"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/commentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/tips_for_you"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/tipsIMG"
+        app:layout_constraintStart_toEndOf="@+id/tipsIMG"
+        app:layout_constraintTop_toTopOf="@+id/tipsIMG" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <ImageView
+        android:id="@+id/tipsIMG"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/IMG"
+        app:srcCompat="@drawable/icons8_light_on_48" />
+
+    <ImageView
+        android:id="@+id/advice1IMG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tipsIMG"
+        app:srcCompat="@drawable/active" />
+
+    <ImageView
+        android:id="@+id/advice2IMG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/advice1IMG"
+        app:srcCompat="@drawable/salad" />
+
+    <ImageView
+        android:id="@+id/advice3IMG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/advice2IMG"
+        app:srcCompat="@drawable/sleep" />
+
+    <TextView
+        android:id="@+id/advice1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="@string/stay_active"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/advice1IMG"
+        app:layout_constraintStart_toEndOf="@+id/advice1IMG"
+        app:layout_constraintTop_toTopOf="@+id/advice1IMG" />
+
+    <TextView
+        android:id="@+id/advice2TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="@string/eat_a_balanced_diet"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/advice2IMG"
+        app:layout_constraintStart_toEndOf="@+id/advice2IMG"
+        app:layout_constraintTop_toTopOf="@+id/advice2IMG" />
+
+    <TextView
+        android:id="@+id/advice3TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="@string/focus_on_relaxation_and_sleep"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/advice3IMG"
+        app:layout_constraintStart_toEndOf="@+id/advice3IMG"
+        app:layout_constraintTop_toTopOf="@+id/advice3IMG" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
